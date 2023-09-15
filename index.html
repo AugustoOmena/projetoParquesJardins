@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href= "https://fonts.googleapis.com/icon?family=Material+Icons" rel= "stylesheet">
     <link rel="stylesheet" href="..\Assets\Styles\Style.css">
 </head>
 
 <body>
     <header class="menu">
-        <menu>
+        <i id="burger" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -21,8 +23,10 @@
 
     <main>
         <article>
-            <img src="..\Assets\imgs\Oiti.jpg" alt="Imagem">
-            <h2>OITI</h2>
+            <div style="text-align: center;">
+                <img src="..\Assets\imgs\Oiti.jpg" alt="Imagem" style="border-radius: 10px;"">
+                <h2>OITI</h2>
+            </div>             
             <p>Licania tomentosa
                 Família: Chrysobalanaceae
                 Nativa do Bioma Mata Atlântica e de clima tropical, o Oiti, quando adulto pode atingir de 9 a 12 m de altura, ou mais. Seu tronco possui cascas acinzentadas, ereto, cujo diâmetro pode variar de 30 a 65 cm. Sua copa é densa e de formato globoso. Frutos comestíveis, com amêndoas ricas em óleo. Sua madeira é resistente, muito utilizada na construção civil, estacas, postes, dormentes, entre outros. Muito usada na arborização urbana por sua copa frondosa, que dá ótima sombra, o que impacta de maneira positiva o meio urbano no período de verão.
@@ -31,6 +35,14 @@
                 Distribuição: Brasil - estados do Piauí, Bahia, Paraíba, Pernambuco e Região Sudeste.</p>
         </article>
     </main>
-
+    <script>
+        function clickMenu() {
+            if (itens.style.display == "block") {
+                itens.style.display = "none"
+            } else {
+                itens.style.display = "block"
+            }
+        }
+    </script>
 </body>
 </html>
