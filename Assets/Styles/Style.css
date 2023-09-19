@@ -9,8 +9,8 @@
 body, p {
     background-color: #ffffff;
     text-align: justify;
-    max-width: 720px;
-    margin: 0 auto;
+    max-width: 600px;
+    margin: 20px auto;
 }
 
 .container {
