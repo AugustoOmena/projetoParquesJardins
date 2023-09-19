@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-body {
+body, p {
     background-color: #ffffff;
     text-align: justify;
     max-width: 720px;
